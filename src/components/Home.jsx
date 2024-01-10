@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1 className="main-heading"> Hello, This is React Home Page </h1>
+      <h1 className="main-heading {(day >= 1 && day <= 5) ? odd-bg : null} " > Hello, This is React Home Page </h1>
       <button onClick={currentMessage}> Check Message </button>
       {resultDay}
     </div>
